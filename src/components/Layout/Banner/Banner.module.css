@@ -1,0 +1,41 @@
+.container {
+    min-height: 76vh;
+    background-image: url("../../../assets/mobile/image-header.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+
+@media(min-width: 768px) {
+    .container {
+        min-height: 100vh;
+        background-image: url("../../../assets/desktop/image-header.jpg");
+    }
+
+    .content {
+        font-size: 2em;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 22vh;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+.content h1 {
+    color: #fff;
+}
+
+.content a {
+    margin: 5vh 0px;
+}
+
+.content a img {
+    /*     width: 54px;
+    height: 171px; */
+}

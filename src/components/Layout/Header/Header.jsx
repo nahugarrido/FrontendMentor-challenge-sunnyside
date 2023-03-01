@@ -1,7 +1,8 @@
 import classes from "./Header.module.css";
+import Navbar from "../../Navbar/Navbar.jsx";
 
 const Header = () => {
-  return <div></div>;
+  return <Navbar />;
 };
 
 export default Header;

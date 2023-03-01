@@ -32,17 +32,154 @@ The designs were created to the following widths:
 
 }
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Fraunces', serif;
+  color: var(--very-dark-desaturated-blue);
+  font-weight: 900;
+}
 
+p {
+  font-family: 'Barlow', sans-serif;
+  color: var(--dark-grayish-blue);
+}
 
 body {
   font-size: 18px;
-  background-color: var(--soft-red);
+  font-weight: 900;
 }
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+.wrapper-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.img {
+  max-height: 100%;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  line-height: 1.5em;
+  padding: 50px 38px;
+}
+
+.content-1 p {
+  padding: 2.4rem 0;
+}
+
+.overlay-card {
+  width: 90%;
+  position: absolute;
+  bottom: 2rem;
+  text-align: center;
+}
+
+.overlay-card p {
+  padding: 20px 0;
+}
+
+.green>h2 {
+  color: var(--dark-desaturated-cyan);
+}
+
+.green>p {
+  color: var(--dark-moderate-cyan);
+}
+
+.blue>h2 {
+  color: var(--dark-blue);
+}
+
+.blue>p {
+  color: var(--dark-blue);
+}
+
+.testimonial-card {
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.split-50 {
+  width: 100%;
+  height: 50vh;
+}
+
+.split-80 {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 80vh;
+  width: 100%;
+
+}
+
+.split-60 {
+  width: 100%;
+  height: 60vh;
+}
+
+.split-40 {
+  width: 100%;
+  height: 40vh;
+}
+
+@media (min-width: 768px) {
+  .split-40 {
+    width: 50%;
+    height: 75vh;
+  }
+
+  .split-60 {
+    width: 50%;
+    height: 75vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .split-80 {
+    height: 75vh;
+    width: 50%;
+  }
+
+  .overlay-card {
+    width: 50%;
+  }
+
+  .content-1 {
+    align-items: flex-start;
+    text-align: start;
+
+    padding: 6rem;
+  }
+
 }
 
 /* Frontend Mentor */
