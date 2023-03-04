@@ -1,0 +1,33 @@
+.transform-button {
+    position: relative;
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    z-index: 1;
+    appearance: none;
+    background-color: transparent;
+    color: var(--very-dark-desaturated-blue);
+    border: none;
+}
+
+.transform-button::after {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    right: -10px;
+    left: -10px;
+    height: 10px;
+    border-radius: 20px;
+    content: '';
+    background-color: hsla(51, 100%, 49%, 0.315);
+    ;
+    display: block;
+}
+
+.transform-button:hover {
+    cursor: pointer;
+}
+
+.transform-button:hover::after {
+    background-color: hsl(51, 100%, 49%);
+    transition: 0.3s ease;
+}

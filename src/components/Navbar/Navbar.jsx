@@ -7,7 +7,6 @@ import ScreenContext from "../../store/screen-context";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const ctx = useContext(ScreenContext);
-  console.log("isMobile Navbar:", ctx.isMobile);
 
   return (
     <>
@@ -15,16 +14,29 @@ const Navbar = () => {
         <div>
           <img src={logo} alt="logo" />
         </div>
-        <div>
-          <button
-            className={classes["menu-button"]}
-            onClick={() => {
-              setIsOpen(!isOpen);
-            }}
-          >
-            <img src={icon} alt="icon" />
-          </button>
-        </div>
+        {ctx.isMobile ? (
+          <div>
+            <button
+              className={classes["menu-button"]}
+              onClick={() => {
+                setIsOpen(!isOpen);
+              }}
+            >
+              <img src={icon} alt="icon" />
+            </button>
+          </div>
+        ) : (
+          <div>
+            <ul className={classes["menu-desktop"]}>
+              <li>About</li>
+              <li>Services</li>
+              <li>Projects</li>
+              <li>
+                <button className={classes["button-desktop"]}>CONTACT</button>
+              </li>
+            </ul>
+          </div>
+        )}
       </div>
       {isOpen && ctx.isMobile && (
         <div className={classes["modal-navbar"]}>

@@ -1,0 +1,33 @@
+.standout-button {
+    position: relative;
+    font-family: 'Fraunces', serif;
+    font-weight: 800;
+    z-index: 1;
+    appearance: none;
+    background-color: transparent;
+    color: var(--very-dark-desaturated-blue);
+    border: none;
+}
+
+.standout-button::after {
+    position: absolute;
+    z-index: -1;
+    top: 10px;
+    right: -10px;
+    left: -10px;
+    height: 10px;
+    border-radius: 20px;
+    content: '';
+    background-color: hsla(7, 99%, 70%, 0.315);
+    ;
+    display: block;
+}
+
+.standout-button:hover {
+    cursor: pointer;
+}
+
+.standout-button:hover::after {
+    background-color: hsl(7, 99%, 70%);
+    transition: 0.3s ease;
+}

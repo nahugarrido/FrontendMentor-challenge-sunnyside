@@ -4,6 +4,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
+    background-position: center;
 }
 
 @media(min-width: 768px) {

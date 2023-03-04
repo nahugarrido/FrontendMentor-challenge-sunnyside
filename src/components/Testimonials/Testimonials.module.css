@@ -1,0 +1,29 @@
+.title {
+    margin-top: 10vh;
+    text-align: center;
+    color: var(--grayish-blue);
+    font-family: 'Fraunces', serif;
+    letter-spacing: 4px;
+}
+
+.testimonials-wrap {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+@media(min-width: 768px) {
+    .testimonials {
+        min-height: 100vh;
+    }
+
+    .testimonials-wrap {
+        height: 60vh;
+    }
+
+    .title {
+        margin-top: 20vh;
+    }
+}

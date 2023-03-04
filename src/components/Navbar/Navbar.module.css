@@ -66,3 +66,33 @@
     height: 50px;
     width: 125px;
 }
+
+.menu-desktop {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    color: var(--white);
+    font-family: 'Barlow', sans-serif;
+}
+
+.menu-desktop li {
+    padding: 0 24px;
+}
+
+.button-desktop {
+    font-family: 'Fraunces', serif;
+    background-color: var(--white);
+    color: var(--very-dark-desaturated-blue);
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    width: 125px;
+}
+
+.button-desktop:hover {
+    color: var(--white);
+    background-color: #ffffff62;
+    cursor: pointer;
+    transition: 0.3s ease;
+}

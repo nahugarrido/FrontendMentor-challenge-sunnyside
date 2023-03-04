@@ -34,7 +34,6 @@ function App() {
   let isMobile = Boolean;
 
   screenSize.width >= 768 ? (isMobile = false) : (isMobile = true);
-  console.log(isMobile);
 
   return (
     <>

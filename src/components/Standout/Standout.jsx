@@ -6,7 +6,6 @@ import { useContext } from "react";
 
 const Standout = () => {
   const ctx = useContext(ScreenContext);
-  console.log("isMobile Standout: ", ctx.isMobile);
 
   return (
     <section className="wrapper">
@@ -26,7 +25,7 @@ const Standout = () => {
             photographers, videographers, and copywriters, we'll build and
             extends your brand in digital places.
           </p>
-          <button>LEARN MORE</button>
+          <button className={classes["standout-button"]}>LEARN MORE</button>
         </div>
       </div>
     </section>
