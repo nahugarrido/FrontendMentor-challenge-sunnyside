@@ -1,15 +1,14 @@
 import { useState, useEffect } from "react";
-
+import ScreenContext from "./store/screen-context";
 import Banner from "./components/Layout/Banner/Banner";
 import Transform from "./components/Transform/Transform";
 import Standout from "./components/Standout/Standout";
 import Testimonials from "./components/Testimonials/Testimonials";
-import Showcase from "./components/Layout/Showcase/Showcase";
+import Gallery from "./components/Layout/Gallery/Gallery";
 import Footer from "./components/Layout/Footer/Footer";
 import Header from "./components/Layout/Header/Header";
 import Graphic from "./components/Graphic/Graphic";
 import Photography from "./components/Photography/Photography";
-import ScreenContext from "./store/screen-context";
 
 import "./App.css";
 
@@ -49,6 +48,7 @@ function App() {
           </div>
           <Testimonials />
         </main>
+        <Gallery />
         <Footer />
       </ScreenContext.Provider>
 

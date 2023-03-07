@@ -1,5 +1,5 @@
 .title {
-    margin-top: 10vh;
+    margin: 10vh 0;
     text-align: center;
     color: var(--grayish-blue);
     font-family: 'Fraunces', serif;
@@ -20,10 +20,10 @@
     }
 
     .testimonials-wrap {
-        height: 60vh;
+        height: 50vh;
     }
 
     .title {
-        margin-top: 20vh;
+        margin: 20vh 0 0 0;
     }
 }
